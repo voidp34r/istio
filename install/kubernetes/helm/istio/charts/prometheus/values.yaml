@@ -35,7 +35,7 @@ scrapeInterval: 15s
 contextPath: /prometheus
 
 ingress:
-  enabled: false
+  enabled: true
   ## Used to create an Ingress record.
   hosts:
     - prometheus.local
@@ -51,7 +51,7 @@ ingress:
 service:
   annotations: {}
   nodePort:
-    enabled: false
+    enabled: true
     port: 32090
 
 security:

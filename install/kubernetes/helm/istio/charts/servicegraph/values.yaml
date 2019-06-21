@@ -35,7 +35,7 @@ service:
   loadBalancerIP:
   loadBalancerSourceRanges:
 ingress:
-  enabled: false
+  enabled: true
   # Used to create an Ingress record.
   hosts:
     - servicegraph.local
