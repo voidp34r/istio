@@ -75,7 +75,7 @@ prometheus:
 # addon servicegraph configuration
 #
 servicegraph:
-  enabled: false
+  enabled: true
 
 #
 # addon jaeger tracing configuration
@@ -101,7 +101,7 @@ istio_cni:
 # addon Istio CoreDNS configuration
 #
 istiocoredns:
-  enabled: false
+  enabled: true
 
 # Common settings used among istio subcharts.
 global:
@@ -169,7 +169,7 @@ global:
 
     # Log level for proxy, applies to gateways and sidecars.  If left empty, "warning" is used.
     # Expected values are: trace|debug|info|warning|error|critical|off
-    logLevel: ""
+    logLevel: "info"
 
     # Configure the DNS refresh rate for Envoy cluster of type STRICT_DNS
     # 5 seconds is the default refresh rate used by Envoy
